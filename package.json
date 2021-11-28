@@ -1,0 +1,34 @@
+{
+  "name": "marsmello",
+  "version": "1.0.0",
+  "description": "<div styles=\"display:flex; justify-content:centre;\">\r   <img src=\"./client/public/marsmello.png\" width=500/>\r </div>",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.21.1",
+    "@graphprotocol/graph-ts": "0.20.0",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@truffle/hdwallet-provider": "^1.4.2"
+  },
+  "scripts": {
+    "gcli":"ganache-cli -h 0.0.0.0 -s double tuition any buffalo exist orange faint piano carpet noise ill cable",
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ MarsMello",
+    "create-local": "graph create --node http://localhost:8020/ MarsMello",
+    "remove-local": "graph remove --node http://localhost:8020/ MarsMello",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 MarsMello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayeshbhole/MarsMello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayeshbhole/MarsMello/issues"
+  },
+  "homepage": "https://github.com/jayeshbhole/MarsMello#readme"
+}
